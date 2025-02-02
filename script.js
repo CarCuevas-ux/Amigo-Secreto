@@ -25,8 +25,10 @@ document.getElementById('btn-sortear').addEventListener('click', () => {
     const nombreSorteado = nombres[indiceAleatorio];
 
     document.getElementById('resultado').textContent = `El amigo sorteado es: ${nombreSorteado}`;
+    setTimeout(() => document.getElementById('resultado').textContent = '', 3000); // Limpiar resultado después de 3 segundos
 });
 
+// Función para actualizar la lista de nombres
 function actualizarLista() {
     const lista = document.getElementById('lista-nombres');
     lista.innerHTML = '';
@@ -36,4 +38,8 @@ function actualizarLista() {
         li.textContent = nombre;
         lista.appendChild(li);
     });
+}
+
+function toggleModoNocturno() {
+    document.body.classList.toggle('modo-nocturno');
 }

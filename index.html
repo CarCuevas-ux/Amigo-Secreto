@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sortear un amigo secreto de manera sencilla y divertida.">
+    <meta name="keywords" content="amigo secreto, sorteo, amistad, nombres">
     <title>Amigo Secreto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+
+    <!-- Encabezado con imagen -->
+    <header>
+        <img src="img/amistad.png" alt="Encabezado" class="header-img">
+        <!-- Botón de modo nocturno -->
+        <button class="modo-nocturno-btn" onclick="toggleModoNocturno()">🌙</button>
+    </header>
+
+    <main class="container">
         <h1>Amigo Secreto</h1>
         <h2>Digite el nombre de sus amigos</h2>
         <div class="form-group">
@@ -17,7 +27,19 @@
         <ul id="lista-nombres"></ul>
         <button id="btn-sortear">Sortear Amigo</button>
         <p id="resultado"></p>
-    </div>
+    </main>
+
+    <!-- Sección de información y agradecimiento -->
+    <section class="info">
+        <p>Este proyecto permite ingresar nombres de amigos y sortear un "Amigo Secreto" de manera aleatoria.</p>
+        <p>Agradezco a <strong>Alura Latam</strong> y a <strong>Oracle</strong> por la oportunidad de aprender y desarrollar este proyecto.</p>
+    </section>
+
+    <!-- Footer con una imagen -->
+    <footer>
+        <p class="pie">&copy; 2025 Carlos Daniel Cuevas. Todos los derechos reservados.</p>
+        <img src="img/Alura+oracle.png" alt="Imagen Footer 1" class="footer-img">
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
